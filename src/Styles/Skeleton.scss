@@ -1,0 +1,103 @@
+
+
+div.skeleton {
+  min-width: 360px;
+  width: 45%;
+  max-width: 600px;
+  box-shadow: 0.1px 0.2px 7px 0.1px #16b8f83a;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+
+  // padding: 5px;
+  // margin: 10px;
+
+
+  div.image {
+    margin: 5px;
+    height: 480px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.281);
+  }
+
+  div.title {
+    border-top: 1px solid #16b8f8;
+    border-bottom: 1px solid #16b8f8;
+    padding: 2px 5px;
+    margin: 7px 0;
+    // width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+    div.titleText {
+      // border: 1px solid #16b8f8;
+      width: 95%;
+      height: 85%;
+      background-color: rgba(128, 128, 128, 0.281);
+
+
+    }
+  }
+
+  div.btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7px;
+    height: 50px;
+
+
+    div.btn {
+      width: 50px;
+      height: 50px;
+      text-decoration: none;
+    }
+
+    div.likeBtn {
+      background-color: rgba(255, 0, 0, 0.151);
+    }
+    div.downloadBtn {
+      background-color: #16b8f82d;
+    }
+  }
+}
+
+div.shimmerWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: loading 0.5s infinite;  
+}
+
+div.shimmer {
+  width: 40%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-140%);
+
+  }
+  50% {
+    transform: translateX(-70%);
+
+
+  }
+  100% {
+    transform: translateX(140%);
+
+
+  }
+  
+  
+}

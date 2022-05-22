@@ -1,0 +1,134 @@
+// Incoming! 
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Beau+Rivage&family=Cinzel:wght@400;500;600&family=Courgette&family=Forum&family=Great+Vibes&family=Pacifico&family=Satisfy&display=swap');
+
+div.facade {
+  height: 100vh;
+  overflow: hidden;
+  // position: relative;
+  // max-height: 1080px;
+
+    div.handwriting {
+      // border: 2px solid red;
+      margin: 35vh auto 0;
+      transition-delay: 0.5ss;
+      height: 12%;
+      width: 100%;
+      max-width: 1040px;
+      
+    
+      svg {
+        // border: 2px solid blue;
+    
+        .text {
+          text-align: center;
+          stroke-dasharray: 2800;
+          stroke-dashoffset: 2800;
+          animation: animate 3s linear forwards;
+        }
+      }
+    }
+
+    div.texts {
+      // border: 2px solid green;
+      font-family: 'Forum';
+      color: transparentize($color: #16b7f8, $amount: 1) ;
+      margin: 20px auto 30px;
+      transform: translate(50vh);
+      animation: text-animate 0.5s linear 2.5s  forwards;
+
+      p {
+        font-size: 130%;
+        font-weight: 200;
+        letter-spacing: 0px;
+      }
+    }
+
+    div.getStarted {
+      // border: 2px solid red;
+      position: relative;
+      padding: 0;
+      height: 40px;
+      width: max-content;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // flex-wrap: wrap;
+      transform: translateX(-80vw);
+      animation: btn-animate 0.5s linear 2.5s  forwards;
+
+      a {
+        border: 1px solid #16b7f8;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: #16b7f8;
+        color: white;
+        text-decoration: none;
+        padding: 7px 12px;
+        font-size: 1.3rem;
+        font-family: 'Forum', cursive;
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        width: max-content;
+        
+        position: absolute;
+  
+        &:hover {
+          background-color: white;
+          color: #16b7f8;
+          transition: all 0.5s ease;
+  
+        }
+      }
+    }
+    
+    
+}
+
+
+@keyframes animate {
+  to {
+    stroke-dashoffset: 0;
+    // stroke-dasharray: 0;
+  }
+}
+
+
+@keyframes text-animate {
+
+  from {
+    transform: translate(50vh);
+    color: transparentize($color: #16b7f8, $amount: 1) ;
+
+  }
+  to {
+    transform: translate(0);
+    color: transparentize($color: #16b7f8, $amount: 0) ;
+
+  }
+  
+}
+
+@keyframes btn-animate {
+
+  from {
+    transform: translate(-80vw);
+  }
+  to {
+    transform: translate(0);
+  }
+  
+}
+
+
+
+
+// @media screen and (max-width: 600px) {
+  
+//   div.handwriting {
+//     height: 120px;
+//   }
+  
+  
+    
+// }
